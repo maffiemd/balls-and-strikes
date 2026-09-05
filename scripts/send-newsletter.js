@@ -12,7 +12,7 @@
 //   SUPABASE_SERVICE_ROLE_KEY   server-side key with SELECT access - never expose this in the site's JS
 //   RESEND_API_KEY
 //   FROM_EMAIL                  e.g. "Balls and Strikes <newsletter@yourdomain.com>"
-//   SITE_URL                    e.g. "https://yourusername.github.io/grievances-about-sports"
+//   SITE_URL                    e.g. "https://yourusername.github.io/balls-and-strikes"
 // Optional:
 //   TEST_EMAIL                  if set, sends only to this address instead of querying Supabase
 //   REPLY_TO                    address replies should go to (the sending domain can't receive mail)
@@ -56,7 +56,7 @@ function postUrlPath(postFilePath) {
 }
 
 // Rewrites root-relative src/href attributes (as Jekyll's relative_url filter
-// produces, e.g. "/grievances-about-sports/assets/images/x.jpg") into fully
+// produces, e.g. "/balls-and-strikes/assets/images/x.jpg") into fully
 // qualified URLs, since email clients can't resolve relative links.
 function absolutizeUrls(html, origin) {
   const $ = cheerio.load(html, null, false);

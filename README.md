@@ -39,7 +39,7 @@ A Substack-style newsletter: write a post as a Markdown file, push it to GitHub,
   - `RESEND_API_KEY`
 - *Variables* tab, add:
   - `FROM_EMAIL` — e.g. `Balls and Strikes <newsletter@yourdomain.com>`
-  - `SITE_URL` — e.g. `https://yourusername.github.io/grievances-about-sports` (no trailing slash)
+  - `SITE_URL` — e.g. `https://yourusername.github.io/balls-and-strikes` (no trailing slash)
 
 ### 4. Enable GitHub Pages
 
@@ -61,7 +61,7 @@ The welcome email's text lives in its own file, [`supabase/functions/notify-owne
      RESEND_API_KEY=your_resend_api_key \
      NOTIFY_FROM_EMAIL="onboarding@resend.dev" \
      OWNER_EMAIL=you@example.com \
-     SITE_URL="https://yourusername.github.io/grievances-about-sports" \
+     SITE_URL="https://yourusername.github.io/balls-and-strikes" \
      WEBHOOK_SECRET=$(openssl rand -hex 32)
    ```
    (`NOTIFY_FROM_EMAIL` can stay on Resend's shared testing address until you verify your own domain — same as `FROM_EMAIL` in step 2. `SITE_URL` is only used to build a clickable link in the comment-notification email.)

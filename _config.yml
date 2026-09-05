@@ -2,7 +2,7 @@ title: Balls and Strikes
 description: >-
   A newsletter about collective bargaining, contract negotiations, and arbitration in professional sports.
 url: "https://maffiemd.github.io"
-baseurl: "/grievances-about-sports" # repo name; leave "" if using a custom domain or a <username>.github.io repo
+baseurl: "/balls-and-strikes" # repo name; leave "" if using a custom domain or a <username>.github.io repo
 
 # Supabase project settings used by assets/js/supabase-client.js.
 # The anon key is safe to publish - it can only INSERT into subscribers
