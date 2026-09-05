@@ -3,10 +3,10 @@
 // paragraph in the email. After editing, redeploy with:
 //   supabase functions deploy notify-owner --no-verify-jwt
 
-export const WELCOME_EMAIL_SUBJECT = "Welcome to Sports Grievances";
+export const WELCOME_EMAIL_SUBJECT = "Welcome to Balls and Strikes";
 
-export const WELCOME_EMAIL_BODY = `Thanks for subscribing. As Frank Costanza put it, the tradition begins with the airing of grievances - and Sports Grievances covers the labor side of sports: collective bargaining, contract negotiations, and arbitration cases across the major leagues.
+export const WELCOME_EMAIL_BODY = `Thanks for subscribing. Calling balls and strikes is the most basic job in sports - and the most argued-about. Balls and Strikes takes that same idea to the labor side of sports: collective bargaining, contract negotiations, and arbitration cases across the major leagues, where someone always has to make the call.
 
 New posts land here whenever there's something worth writing about, and go out by email as soon as they're published.
 
-We got a lot of grievances to talk about. And now you're going to hear about them.`;
+Get ready for a lot of close calls.`;
