@@ -80,7 +80,7 @@ function buildNotifications(table: string, type: string, record: Row, oldRecord:
       {
         to: record.email,
         subject: WELCOME_EMAIL_SUBJECT,
-        body: { html: renderWelcomeEmailHtml(siteUrl(), unsubscribeLink) },
+        body: { html: renderWelcomeEmailHtml(unsubscribeLink) },
         replyTo: ownerEmail,
       },
     ];

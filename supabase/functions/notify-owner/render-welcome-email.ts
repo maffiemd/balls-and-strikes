@@ -13,7 +13,7 @@ const COLOR_FG = "#1a1a1a";
 const COLOR_MUTED = "#6b6b6b";
 const COLOR_BORDER = "#e5e0da";
 
-export function renderWelcomeEmailHtml(siteUrl: string, unsubscribeLink: string) {
+export function renderWelcomeEmailHtml(unsubscribeLink: string) {
   const paragraphs = WELCOME_EMAIL_BODY.trim()
     .split(/\n\s*\n/)
     .map((p) => `<p style="margin:0 0 1em;">${p.trim()}</p>`)
@@ -24,7 +24,6 @@ export function renderWelcomeEmailHtml(siteUrl: string, unsubscribeLink: string)
   <body style="margin:0;padding:0;background:${COLOR_BG};font-family:Georgia,'Times New Roman',serif;color:${COLOR_FG};">
     <div style="max-width:640px;margin:0 auto;padding:32px 20px;">
       <h1 style="font-size:1.4rem;">${WELCOME_EMAIL_SUBJECT}</h1>
-      <img src="${siteUrl}/assets/images/festivus.jpg" alt="Seinfeld: the tradition of Festivus begins with the airing of grievances." style="max-width:100%;height:auto;display:block;border-radius:4px;margin:0 0 1.5em;">
       <div style="font-size:1.05rem;line-height:1.6;">${paragraphs}</div>
       <hr style="margin:32px 0;border:none;border-top:1px solid ${COLOR_BORDER};">
       <p style="color:${COLOR_MUTED};font-family:-apple-system,sans-serif;font-size:0.8rem;">

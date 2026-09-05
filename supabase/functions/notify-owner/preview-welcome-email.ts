@@ -10,7 +10,7 @@
 
 import { renderWelcomeEmailHtml } from "./render-welcome-email.ts";
 
-const html = renderWelcomeEmailHtml("../../..", "#unsubscribe-link-placeholder");
+const html = renderWelcomeEmailHtml("#unsubscribe-link-placeholder");
 const outPath = new URL("./.preview.html", import.meta.url).pathname;
 await Deno.writeTextFile(outPath, html);
 console.log(`Wrote ${outPath}`);
