@@ -11,7 +11,7 @@
 //   SUPABASE_URL
 //   SUPABASE_SERVICE_ROLE_KEY   server-side key with SELECT access - never expose this in the site's JS
 //   RESEND_API_KEY
-//   FROM_EMAIL                  e.g. "Sports Grievances <newsletter@yourdomain.com>"
+//   FROM_EMAIL                  e.g. "Balls and Strikes <newsletter@yourdomain.com>"
 //   SITE_URL                    e.g. "https://yourusername.github.io/grievances-about-sports"
 // Optional:
 //   TEST_EMAIL                  if set, sends only to this address instead of querying Supabase
@@ -93,7 +93,7 @@ ${bodyText}
 Read it on the site: ${postLink}
 
 ---
-You're receiving this because you subscribed to Sports Grievances.
+You're receiving this because you subscribed to Balls and Strikes.
 Unsubscribe: ${unsubscribeLink}
 `;
 }
@@ -111,7 +111,7 @@ function renderEmailHtml({ title, dateText, bodyHtml, postLink, unsubscribeLink 
       </p>
       <hr style="margin:32px 0;border:none;border-top:1px solid ${COLOR_BORDER};">
       <p style="color:${COLOR_MUTED};font-family:-apple-system,sans-serif;font-size:0.8rem;">
-        You're receiving this because you subscribed to Sports Grievances.
+        You're receiving this because you subscribed to Balls and Strikes.
         <a href="${unsubscribeLink}" style="color:${COLOR_MUTED};">Unsubscribe</a>
       </p>
     </div>
