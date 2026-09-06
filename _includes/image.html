@@ -1,4 +1,4 @@
 <figure class="post-image">
-  <img src="{{ include.src | prepend: '/assets/images/' | relative_url }}" alt="{{ include.alt | default: '' }}">
+  <img src="{{ include.src | prepend: '/assets/images/' | relative_url }}" alt="{{ include.alt | default: '' }}" style="max-width:100%;height:auto;display:block;">
   {% if include.caption %}<figcaption>{{ include.caption }}</figcaption>{% endif %}
 </figure>
