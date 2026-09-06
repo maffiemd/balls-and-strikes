@@ -5,8 +5,6 @@
 
 export const WELCOME_EMAIL_SUBJECT = "Welcome to Balls and Strikes";
 
-export const WELCOME_EMAIL_BODY = `Thanks for subscribing. Calling balls and strikes is the most basic job in sports - and the most argued-about. Balls and Strikes takes that same idea to the labor side of sports: collective bargaining, contract negotiations, and arbitration cases across the major leagues, where someone always has to make the call.
+export const WELCOME_EMAIL_BODY = `Thanks for subscribing. Understanding the rules is the first step to learning any sport. But how are the rules made? Why do some sports have a salary cap and others do not? Why can't NCAA football players unionize? These are all questions of collective bargaining. Here at Balls and Strikes, we cover labor relations, collective bargaining, and contract administration — or: the rules that make the rules in professional sports.
 
-New posts land here whenever there's something worth writing about, and go out by email as soon as they're published.
-
-Get ready for a lot of close calls.`;
+New posts land here whenever there's something worth writing about, and go out by email as soon as they're published.`;
