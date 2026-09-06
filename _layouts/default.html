@@ -34,6 +34,9 @@
   <meta name="twitter:card" content="{% if page.image %}summary_large_image{% else %}summary{% endif %}">
   <meta name="twitter:title" content="{{ page.title | default: site.title }}">
   <meta name="twitter:description" content="{{ page_description }}">
+  {% if page.image %}
+  <meta name="twitter:image" content="{{ page.image | absolute_url }}">
+  {% endif %}
 </head>
 <body id="top">
   {% include header.html %}
