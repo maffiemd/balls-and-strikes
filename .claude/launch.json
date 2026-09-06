@@ -6,7 +6,7 @@
       "runtimeExecutable": "bash",
       "runtimeArgs": [
         "-c",
-        "export PATH=\"/opt/homebrew/opt/ruby/bin:$PATH\"; export CPATH=\"$(xcrun --show-sdk-path)/usr/include/c++/v1\"; bundle exec jekyll serve --host 0.0.0.0"
+        "export PATH=\"/opt/homebrew/opt/ruby/bin:$PATH\"; export CPATH=\"$(xcrun --show-sdk-path)/usr/include/c++/v1\"; bundle exec jekyll serve --host 0.0.0.0 --drafts"
       ],
       "port": 4000
     }
