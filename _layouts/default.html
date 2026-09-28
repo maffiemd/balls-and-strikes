@@ -4,7 +4,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
-  {% assign page_description = page.excerpt | default: site.description | strip_html | truncate: 160 %}
+  {% comment %}
+    Description for <meta>/share cards: an explicit `description:` in front matter wins;
+    otherwise the post excerpt, minus a leading image include (its caption would otherwise
+    become the first thing a share card shows).
+  {% endcomment %}
+  {% assign excerpt_html = page.excerpt | append: '' %}
+  {% assign excerpt_parts = excerpt_html | split: '</figure>' %}
+  {% if excerpt_parts.size > 1 %}
+    {% assign page_excerpt = excerpt_parts | last %}
+  {% elsif excerpt_html contains '<figure' %}
+    {% assign page_excerpt = '' %}
+  {% else %}
+    {% assign page_excerpt = excerpt_html %}
+  {% endif %}
+  {% assign page_description = page.description | default: page_excerpt | default: site.description | strip_html | normalize_whitespace | strip | truncate: 160 %}
   <meta name="description" content="{{ page_description }}">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
